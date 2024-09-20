@@ -1,7 +1,7 @@
 FROM python:3.9-slim
 
 # Install dependencies
-RUN pip install pandas sqlalchemy psycopg2-binary
+RUN pip install pandas sqlalchemy psycopg2-binary python-dotenv
 
 WORKDIR /app
 
