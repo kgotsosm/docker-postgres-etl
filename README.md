@@ -27,8 +27,6 @@ cd docker-etl
 
 1. Create a .env file in the root of the project with the following content, add in the values as needed:
 
-*NEVER EXPOSE THIS FILE PUBLICLY*
-
 DB_HOST<br>
 DB_PORT<br>
 DB_USER<br>
