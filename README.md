@@ -56,7 +56,7 @@ psql -h your_host -U your_username -d sales_db
 ```
 
 
-### Usage
+## Usage
 After setting up, the ETL pipeline will:
 
 - Extract data from data/supermarket_sales.csv
