@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: sales_db
+    ports:
+      - "5433:5434"
+    volumes:
+    # Persist PostgreSQL data
+      - ./postgres-data:/var/lib/postgresql/data
+    # Run the SQL script to initialize the DB
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - etl_network
+
+  etl:
+    build: .
+    depends_on:
+      - postgres
+    environment:
+      - DB_HOST=postgres
+      - DB_PORT=5434
+      - DB_USER=user
+      - DB_PASSWORD=secret
+      - DB_NAME=sales_db
+    networks:
+      - etl_network
+
+networks:
+  etl_network:
+    driver: bridge
