@@ -8,6 +8,12 @@ This repository contains an ETL (Extract, Transform, Load) pipeline implemented 
     <img src="/image/postgresql.svg" alt="PostgreSQL" width="100" />
 </div>
 
+## Purpose
+
+This ETL (Extract, Transform, Load) pipeline is designed to streamline the processing of sales data for a retail business, enabling more efficient analysis and decision-making. By extracting raw sales data from CSV files, transforming it into meaningful insights—such as hourly sales trends, branch performance, and product line performance—and loading it into a PostgreSQL database, the pipeline provides a scalable and automated solution for managing large volumes of data. This system empowers businesses to make data-driven decisions, optimize operations, and improve sales strategies by delivering actionable insights in a timely manner.
+
+This can easily be translated into a cloud native application where data is taken from the source, transformed and stored in a cloud database to be used in the same manner by analytics teams.
+
 ## Prerequisites
 
 - Docker
