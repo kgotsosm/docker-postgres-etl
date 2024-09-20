@@ -3,9 +3,9 @@
 This repository contains an ETL (Extract, Transform, Load) pipeline implemented using Docker, PostgreSQL, and Python. The pipeline processes a supermarket sales dataset from Kaggle and loads it into a PostgreSQL database.
 
 <div style="display: flex; justify-content: space-around; gap: 10">
-    <img src="docker.svg" alt="Docker" width="100" />
-    <img src="python.svg" alt="Python" width="100" />
-    <img src="postgresql.svg" alt="PostgreSQL" width="100" />
+    <img src="/image/docker.svg" alt="Docker" width="100" />
+    <img src="/image/python.svg" alt="Python" width="100" />
+    <img src="/image/postgresql.svg" alt="PostgreSQL" width="100" />
 </div>
 
 ## Prerequisites
